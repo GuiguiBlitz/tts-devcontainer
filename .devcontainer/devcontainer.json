@@ -1,0 +1,29 @@
+{
+  "name": "Qwen3 TTS Dev",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+      "installCudnn": true
+    }
+  },
+
+  "postCreateCommand": "pip install uv && uv sync",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": ".venv/bin/python",
+        "python.terminal.activateEnvironment": true
+      },
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.uv" 
+      ]
+    }
+  }
+
+  // "runArgs": [
+  //   "--gpus", "all"
+  // ]
+}

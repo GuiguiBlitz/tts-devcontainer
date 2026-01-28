@@ -1,0 +1,23 @@
+[project]
+name = "qwen3-tts-clone"
+version = "0.1.0"
+description = "Qwen3 TTS Cloning Interface"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "gradio==6.5.0",
+    "torch==2.10.0",
+    "soundfile==0.13.1",
+    "transformers==4.57.3",
+    "accelerate==1.12.0",
+    "huggingface-hub==0.36.0",
+    "pytz==2025.2",
+    "librosa==0.11.0",
+    "sox==1.5.0",
+    "onnxruntime>=1.21.0",
+    "qwen-tts @ git+https://github.com/QwenLM/Qwen3-TTS.git",
+    "typer>=0.21.1",
+]
+
+[dependency-groups]
+dev = []

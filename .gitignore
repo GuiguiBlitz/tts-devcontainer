@@ -1,0 +1,8 @@
+# Ignore the model directory
+Qwen3-TTS-12Hz-1.7B-CustomVoice/
+Qwen3-TTS-12Hz-1.7B-Base/
+
+# Ignore python environment and cache
+.venv/
+__pycache__/
+*.pyc
